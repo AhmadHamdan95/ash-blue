@@ -1,0 +1,53 @@
+.about-cover{
+    height: 100vh;
+    background-image: url("../../uploads/cover4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include media-breakpoint-only(md){
+        height: 460px;
+    }
+    @include media-breakpoint-down(sm){
+        height: 360px;
+    }
+
+    .cover{
+        position: relative;
+        
+        .cover-text{
+            position: absolute;
+            top: 124px;
+            width: 300px;
+            
+            .title{
+                text-transform: uppercase;
+                font-size: 28px;
+                color: $gray-color;
+                position: relative;
+                display: inline-block;
+                &:after{
+                    content: "";
+                    height: 2px;
+                    width: calc(100% - 20px);
+                    position: absolute;
+                    top: 38px;
+                    left: 5px;
+                    background-color: #fff;
+                }
+            }
+            .text{
+                font-size: 14px;
+                color: $gray-color;
+            }
+
+            body.english &{
+                left: 0;
+                right: auto;
+            }
+            body.arabic &{
+                right: 0;
+                left: auto;
+            }
+        }
+    }
+}

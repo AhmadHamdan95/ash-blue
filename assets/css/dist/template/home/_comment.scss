@@ -1,0 +1,21 @@
+.comment{
+    background-color: $gray-color;
+    .comment-content{
+        text-align: center;
+        color: #ffffff;
+        .quote{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .text{
+            font-size: 18px;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+        .ashblue{
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}

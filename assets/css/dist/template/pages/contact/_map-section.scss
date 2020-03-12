@@ -1,0 +1,8 @@
+.map-section{
+    background-color: $gray-color;
+    .map{
+        @include media-breakpoint-up(lg){
+            height: 460px !important;
+        }
+    }
+}

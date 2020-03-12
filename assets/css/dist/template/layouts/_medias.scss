@@ -1,0 +1,22 @@
+.medias{
+    background-color: $gray-color;
+    .socialMedia{
+        a {
+          width: 46px;
+          height: 46px;
+          line-height: 46px;
+          text-align: center;
+          border-radius: 50%;
+          color: #ffffff;
+          background-color: #383a38;
+          transition: 0.4s;
+          &:hover{
+            @each $item in $navbarMedias{
+              &[class*="#{nth($item, 1)}"] {
+                background-color: nth($item, 2);
+              }
+            }
+          }
+        }
+    }
+}

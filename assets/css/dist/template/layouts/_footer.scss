@@ -1,0 +1,66 @@
+.footer{
+    background-color: #d9d8d8;
+    .contact{
+        .contact-title{
+            color: $gray-color;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        .contact-text{
+            color: $gray-color;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .message{
+        form{
+            input{
+                display: block;
+                height: 30px;
+                width: 100%;
+                background-color: transparent;
+                border: 1px solid #b0afab;
+                color: $gray-color;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-bottom: 10px;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+
+                &[type="submit"]{
+                    width: auto;
+                    border: 0;
+                    background-color: #b0afab;
+                    color: #ffffff;
+                    font-weight: bold;
+                    transition: 0.4s;
+                    &:hover{
+                        background-color: $gray-color;
+                    }
+                }
+            }
+            textarea{
+                resize: none;
+                display: block;
+                height: 110px;
+                width: 100%;
+                background-color: transparent;
+                border: 1px solid #b0afab;
+                color: $gray-color;
+                padding-right: 15px;
+                padding-left: 15px;
+                outline: 0;
+            }
+        }
+    }
+
+    .copyRightLine {
+        height: 36px;
+        background-color: $gray-color;
+        color: #ffffff;
+    }
+}

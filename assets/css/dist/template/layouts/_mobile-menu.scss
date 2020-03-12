@@ -1,0 +1,37 @@
+.mobile-menu{
+    position: fixed;
+    top: 94px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 94px);
+    background-color: #fff;
+    z-index: $z-index;
+    overflow-y: scroll;
+    display: none;
+  
+    ul{
+      li{
+        border-bottom: 1px solid $gray-color;
+        a{
+          display: block;
+          color: $gray-color;
+          font-size: 18px;
+          padding: 12px 20px;
+        }
+      }
+    }
+  
+}
+  
+body{
+    &.mobile-menu-active{
+      overflow: hidden;
+      .mobile-menu{
+        display: block;
+      }
+      .header{
+        background-color: $gray-color !important;
+      }
+    }
+}

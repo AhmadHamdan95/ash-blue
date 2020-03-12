@@ -1,0 +1,25 @@
+.about-section{
+    background-color: #d9d9df;
+
+    .title{
+        text-transform: uppercase;
+        font-size: 28px;
+        color: $gray-color;
+        position: relative;
+        display: inline-block;
+        &:after{
+            content: "";
+            height: 2px;
+            width: calc(100% - 20px);
+            position: absolute;
+            top: 38px;
+            left: 5px;
+            background-color: #fff;
+        }
+    }
+    .text{
+        color: $gray-color;
+        text-align: justify;
+    }
+
+}
