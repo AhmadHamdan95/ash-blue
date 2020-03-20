@@ -1,0 +1,22 @@
+.products{
+    background-color: $gray-color;
+    .product-text{
+        font-size: 14px;
+        color: #e3e3f7;
+        .title{
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .add-to-cart{
+            text-transform: uppercase;
+            font-size: 12px;
+            color: $gray-color;
+            background-color: #e5e5f8;
+            height: 36px;
+            transition: 0.4s;
+            &:hover{
+                background-color: #d2d2d8;
+            }
+        }
+    }
+}
